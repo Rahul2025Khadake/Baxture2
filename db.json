@@ -1,0 +1,105 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "user": [
+    {
+      "FirstName": "Shakir",
+      "LastName": "Shaikh",
+      "Email": "shakir@gmail.com",
+      "Address": "Bihar",
+      "id": 2
+    },
+    {
+      "FirstName": "Shivam ",
+      "LastName": "Chabra",
+      "Email": "chabra22@gmail.com",
+      "Address": "Delhi",
+      "id": 3
+    },
+    {
+      "FirstName": "Vishal",
+      "LastName": "Godi",
+      "Email": "vishal22@gmail.com",
+      "Address": "Dharwad",
+      "id": 4
+    },
+    {
+      "FirstName": "Guru",
+      "LastName": "Prasad",
+      "Email": "guru33@gmail.com",
+      "Address": "Shimoga",
+      "id": 5
+    },
+    {
+      "FirstName": "Vishal",
+      "LastName": "Pundhekar",
+      "Email": "pundhakar44@gmail.com",
+      "Address": "Amravathi",
+      "id": 6
+    },
+    {
+      "FirstName": "Rahul",
+      "LastName": "Khadake",
+      "Email": "rahulkhadake1997@gmail.com",
+      "Address": "Solapur",
+      "id": 7
+    },
+    {
+      "FirstName": "Sweek",
+      "LastName": "Sk",
+      "Email": "sk333@gmail.com",
+      "Address": "Uttar Prash",
+      "id": 8
+    },
+    {
+      "FirstName": "Sainath",
+      "LastName": "Reddy",
+      "Email": "sai22@gmail.com",
+      "Address": "Hyderabad",
+      "id": 9
+    },
+    {
+      "FirstName": "Vinay",
+      "LastName": "Karad",
+      "Email": "vinu123@gmail.com",
+      "Address": "Hyderabad",
+      "id": 10
+    },
+    {
+      "FirstName": "Abhiram",
+      "LastName": "Gadasu",
+      "Email": "abhiram@gmail.com",
+      "Address": "hyderabad",
+      "id": 11
+    },
+    {
+      "FirstName": "Dhiraj",
+      "LastName": "Nandhe",
+      "Email": "dharak22@gmail.com",
+      "Address": "chandrapur",
+      "id": 12
+    },
+    {
+      "FirstName": "Abhiram",
+      "LastName": "tester",
+      "Email": "test@gmail.com",
+      "Address": "Hyderabad",
+      "id": 13
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

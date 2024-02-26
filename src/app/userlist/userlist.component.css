@@ -1,0 +1,7 @@
+
+.table-responsive
+{
+    height: 65vh;
+    overflow: auto;
+    scrollbar-color: #5582e4  white;
+}

@@ -1,0 +1,54 @@
+<div class="modal-header mt-3">
+    <h1 class="modal-title fs-5 ms-4" id="exampleModalLabel">
+        {{ isViewOnly ? 'View User Details' : (isEditMode ? 'Edit User Details' : 'Add User Details') }}
+    </h1>
+    <span class="close-icon" (click)="Closedialog()"><i class="bi bi-x-lg fs-5"></i></span>
+</div>
+
+<div class="ps-4">
+    <form [formGroup]="adduser" (ngSubmit)="saveData()">
+        <div class="mb-3">
+            <label for="FirstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="FirstName" placeholder="Enter first name"
+                formControlName="FirstName">
+            <small class="error" class="text-danger"
+                *ngIf="(adduser.get('FirstName')?.touched || adduser.get('FirstName')?.dirty) && adduser.get('FirstName')?.invalid">
+                First Name is required
+            </small>
+        </div>
+        <div class="mb-3">
+            <label for="LastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="LastName" placeholder="Enter last Name"
+                formControlName="LastName">
+            <small class="error" class="text-danger"
+                *ngIf="(adduser.get('LastName')?.touched || adduser.get('LastName')?.dirty) && adduser.get('LastName')?.invalid">
+                Last Name is required
+            </small>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="Email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email id"
+                formControlName="Email">
+            <small class="error text-danger"
+                *ngIf="(adduser.get('Email')?.touched || adduser.get('Email')?.dirty) && adduser.get('Email')?.invalid">
+                <span *ngIf="adduser.get('Email')?.errors?.['required']">Email is required</span>
+                <span *ngIf="adduser.get('Email')?.errors?.['pattern']">Please enter a valid email address</span>
+            </small>
+        </div>
+        <div class="mb-3">
+            <label for="Address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="Address" placeholder=" Enter your address"
+                formControlName="Address">
+            <small class="error" class="text-danger"
+                *ngIf="(adduser.get('Address')?.touched || adduser.get('Address')?.dirty) && adduser.get('Address')?.invalid">
+                Please enter valid Address
+            </small>
+
+        </div>
+        <div class="mt-4 ml-4 saveandSubmitbutton">
+            <button class="btn btn-dark w-25 suBmitbutton" type="button" (click)="Closedialog()">Cancel</button>
+            <button type="button" class="btn btn-primary w-25 " type="submit"
+                [disabled]="adduser.invalid || isViewOnly"> {{ isEditMode ? 'Update' : 'Save' }} </button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,45 @@
+
+.addurder
+{
+  font-size: 20px;
+}
+.close-icon
+{
+  cursor: pointer;
+  font-weight: bolder;
+  margin-right: 2%;
+  margin-top: -4%;
+}
+.mat-dialog-container
+{
+  overflow: hidden !important;
+}
+.suBmitbutton
+{
+  margin-right: 2%;
+}
+.saveandSubmitbutton
+{
+  display: flex;
+    justify-content: end;
+    margin-right: 5%;
+}
+.text-danger
+{
+  font-size: 15px;
+}
+input.ng-invalid.ng-touched
+  {
+    border: 2px solid red;
+  }
+  input.ng-valid
+  {
+    border: 2px solid green;
+  }
+  input
+  {
+    width: 95%;
+  }
+  
+  
+  

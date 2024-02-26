@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #5582e4;">
+  <a class="navbar-brand text-white ps-4" [routerLink]="['/maincomponent']" routerLinkActive="router-link-active">All
+    Data</a>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [ngClass]="{ 'show': isNavbarCollapsed }" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="navbar-brand text-white ps-4" [routerLink]="['/userslist']" routerLinkActive="router-link-active">Crud
+          Operation</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

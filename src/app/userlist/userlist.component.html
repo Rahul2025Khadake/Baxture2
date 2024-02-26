@@ -1,0 +1,46 @@
+<div class="pl-2">
+  <button type="button" class="btn btn-primary  mt-3 ps-2" style="float: right;margin-right: 7%;"
+    (click)="openDialog()">Add user</button>
+</div>
+<br>
+<div class="row">
+  <div class="col-9">
+  </div>
+  <div class="col">
+    <input type="search" placeholder="Search Here...." class="form-control" [(ngModel)]="searchText">
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-hover table-bordered">
+      <thead class="bg-primary" style="position: sticky; top: 0;">
+        <tr class="bg-primary">
+          <th>ID</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Email</th>
+          <th>Adress</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of User_data | filter:searchText; let i=index">
+          <td>{{i+1}}</td>
+          <th>{{item.FirstName}}</th>
+          <th>{{item.LastName}}</th>
+          <th>{{item.Email}}</th>
+          <th>{{item.Address}}</th>
+          <td class="d-flex">
+            <button class="btn btn-primary ms-2" (click)="Edituser(item)"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-danger ms-2" type="button" (click)="DeleteUser(item.id)"><i
+                class="bi bi-trash3-fill"></i></button>
+            <button class="btn btn-success ms-2" (click)="ViweData(item)"><i class="bi bi-eye"></i></button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
